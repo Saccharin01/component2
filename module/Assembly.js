@@ -5,3 +5,4 @@ const container = ()=>{
   ${tagComponent("footer", "푸터 부분")}
   `
 }
+module.exports = container
