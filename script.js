@@ -63,3 +63,7 @@ console.log(something)
 console.log(stateFunc1())
 console.log(stateFunc2())
 console.log(stateFunc3())
+
+tagComponent("h1",stateFunc1())
+tagComponent("h1",stateFunc2())
+tagComponent("h1",stateFunc3())
