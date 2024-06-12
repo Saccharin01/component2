@@ -1,3 +1,43 @@
+module.exports =  class BaseData{
+  constructor(day,month,year){
+    this.day = day
+    this.month = month
+    this.year = year
+  }
+  set day(value) {
+    if(typeof(value)==='number'){
+      this._day = value
+    } else {
+      return console.error('the type of Day Argu is not NUMBER')
+    }
+
+  }
+  get day(){
+    return this._day + "일"
+  }
+  set month(value) {
+    if(typeof(value)==='number'){
+      this._month = value
+
+    }else{
+      return console.error('the type of Month Argu is not NUMBER')
+    }
+  }
+  get month(){
+    return this._month + "월"
+  }
+  set year(value) {
+    if(typeof(value)==='number'){
+      this._year = value
+
+    }else{
+      return console.error('the type of Year Argu is not NUMBER')
+    }
+  }
+  get year() {
+    return this._year + "년" 
+  }
+}
 // const date = new Date()
 // console.log(date) // ? full on ROK
 // console.log(date.getDate()) // ? date
@@ -70,46 +110,6 @@
 //     return this._year + "년" 
 //   }
 // }
-module.exports =  class BaseData{
-  constructor(day,month,year){
-    this.day = day
-    this.month = month
-    this.year = year
-  }
-  set day(value) {
-    if(typeof(value)==='number'){
-      this._day = value
-    } else {
-      return console.error('the type of Day Argu is not NUMBER')
-    }
-
-  }
-  get day(){
-    return this._day + "일"
-  }
-  set month(value) {
-    if(typeof(value)==='number'){
-      this._month = value
-
-    }else{
-      return console.error('the type of Month Argu is not NUMBER')
-    }
-  }
-  get month(){
-    return this._month + "월"
-  }
-  set year(value) {
-    if(typeof(value)==='number'){
-      this._year = value
-
-    }else{
-      return console.error('the type of Year Argu is not NUMBER')
-    }
-  }
-  get year() {
-    return this._year + "년" 
-  }
-}
 
 
 
