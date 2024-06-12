@@ -1,3 +1,8 @@
+const date = new Date()
+console.log(date)
+console.log(date.getDate())
+
+
 const tagComponent = (tagName, textNode) =>{
   return `<${tagName}>${textNode}</${tagName}>`
 }
