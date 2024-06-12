@@ -1,11 +1,15 @@
+<<<<<<< Updated upstream
+const container = ()=>{
+=======
 const tagComponent = require('./TagComponent')
 
 
-const Assembly = ()=>{
+const Assembly = (tagNmae,textNode)=>{
+>>>>>>> Stashed changes
   return`
-  ${tagComponent("header", "헤더 부분")}
-  ${tagComponent("main", "메인 부분")}
-  ${tagComponent("footer", "푸터 부분")}
+  ${tagComponent(tagNmae,textNode)}
+  ${tagComponent(tagNmae,textNode)}
+  ${tagComponent(tagNmae,textNode)}
   `
 }
 module.exports = Assembly
