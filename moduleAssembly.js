@@ -3,7 +3,7 @@
 // import { TagComponent } from "./module/TagComponent.js";
 // export {Assembly, BaseData, TagComponent}
 
-const BaseData = require('./module/NewDate.js')
+const BaseData = require('./module/BaseData.js')
 
-const test = new BaseData()
+const test = new BaseData(1,2,3)
 console.log(test)
