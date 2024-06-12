@@ -38,6 +38,23 @@ module.exports =  class BaseData{
     return this._year + "년" 
   }
 }
+// let test = new BaseData(1212, "조우식", "1212")
+// console.log(test)
+// console.log(test.day)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const date = new Date()
 // console.log(date) // ? full on ROK
 // console.log(date.getDate()) // ? date
@@ -113,7 +130,4 @@ module.exports =  class BaseData{
 
 
 
-// let test = new BaseData(1212, "공욱재", "조용히 해")
-// console.log(test)
-// console.log(test.day)
 
