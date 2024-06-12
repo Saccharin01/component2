@@ -1,7 +1,21 @@
 const {BaseData,assembly,tagComponent} = require('./moduleAssembly')
 const date = new Date();
 let baseData = new BaseData(date.getDate(),date.getMonth()+1,date.getFullYear())
+let baseData2 = new BaseData(date.getDate(),date.getMonth()+1,date.getFullYear())
+let baseData3 = new BaseData(date.getDate(),date.getMonth()+1,date.getFullYear())
 
+const fs = require('fs')
+console.log(fs)
+
+let jsonLike = {};
+
+jsonLike.UserOne = baseData
+jsonLike.UserTwo = baseData2
+jsonLike.UserThree = baseData3
+console.log(jsonLike)
+console.log(jsonLike.UserTwo)
+
+fs.writeFile("test.json",JSON.stringify(jsonLike,null,2),'utf-8',(err)=>{})
 // console.log(baseData)
 // console.dir(baseData)
 // console.log(typeof(baseData))
